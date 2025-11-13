@@ -19,7 +19,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 
 app = Flask(__name__)
-app.secret_key = "0da277e7aa9e193ef24c8ed5c0a5de16c4c900d998ceb5917d64d5ca6bb4d724"
+app.secret_key = "efae731c498e5a73934319921ab95ab6c564f5c24108e1ced5599f7d11e16317"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///crm.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -27,8 +27,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 EMAIL_CONFIG = {
     'smtp_server': 'smtp.gmail.com',
     'smtp_port': 587,
-    'sender_email': 'naved@maisonsia.com',
-    'sender_password': 'brnxvlalwnqozerq',
+    'sender_email': 'steve@maisonsia.com',
+    'sender_password': 'ydscbslkxlakgven',
     'sender_name': 'CRM System'
 }
 
@@ -1519,4 +1519,5 @@ def internal_error(error):
 # RUN APP
 # -------------------------------
 if __name__ == "__main__":
+
     app.run(debug=True, port=5001, use_reloader=False)     
